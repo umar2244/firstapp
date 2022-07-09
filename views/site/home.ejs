@@ -1,0 +1,20 @@
+<%- include('../header/nav'); %>
+
+<h2 class="menu-heading">catgerioes</h2>
+
+<hr>
+<% for(var i=0;i<recipes.length;i++) {%>
+<div class="menu-items">
+    <h3 class="item-heading"><%=recipes[i].name %></h3>
+    
+    <div class="price">
+        description::<%=recipes[i].description %>
+    </div>
+
+    <div class="price">
+        Time::<%=recipes[i].createdAt %>
+    </div>
+  
+</div>
+<hr>
+    <% } %>
